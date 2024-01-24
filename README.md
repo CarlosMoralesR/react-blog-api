@@ -1,10 +1,6 @@
-# react-blog-api
+# Node.js/Express.js React-Blog API
 
-Node.js API for the Blog Web Application made using React + Vite &amp; Tailwind CSS.
-
-# Node Blog API
-
-This API was made using Node.js & Express.js, as well as the ORM Prisma, and using PostgreSQL with ElephantSQL as a database server.
+API made using Node.js & Express.js, as well as the Prisma ORM, and using PostgreSQL with ElephantSQL as a database server.
 
 ## Installation
 
