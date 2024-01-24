@@ -6,6 +6,10 @@ API made using Node.js & Express.js, as well as the Prisma ORM, and using Postgr
 
 First you have to clone the project:
 
+```bash
+  git clone *insert_url*
+```
+
 When you've successfully cloned the project, access the folder and then open it on your IDE:
 
 ```bash
