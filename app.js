@@ -22,7 +22,7 @@ app.get("/entries", async (req, res) => {
     const entries = await prisma.entry.findMany();
     res.json(entries);
   } catch (error) {
-    res.status(500).json({ error: "Error al obtener las entradas" });
+    res.status(500).json({ error: "Error obtaining entries" });
   }
 });
 
@@ -41,7 +41,7 @@ app.post("/entries", async (req, res) => {
 
     res.json(newEntry);
   } catch (error) {
-    res.status(500).json({ error: "Error al crear una nueva entrada" });
+    res.status(500).json({ error: "Error creating a new entry" });
   }
 });
 
@@ -54,12 +54,12 @@ app.delete("/entries/:id", async (req, res) => {
       where: { id: entryId },
     });
 
-    res.json({ message: "Entrada eliminada exitosamente" });
+    res.json({ message: "Entry deleted successfully" });
   } catch (error) {
-    res.status(500).json({ error: "Error al eliminar la entrada por ID" });
+    res.status(500).json({ error: "Error deleting entry by ID" });
   }
 });
 
 app.listen(port, () => {
-  console.log(`Servidor Node.js iniciado en http://localhost:${port}`);
+  console.log(`Started Node.js server in http://localhost:${port}`);
 });
